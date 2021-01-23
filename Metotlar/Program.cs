@@ -18,7 +18,7 @@ namespace Metotlar
 
             Urun[] urunler = new Urun[] { urun1, urun2 };
 
-            foreach ( var urun in urunler)
+            foreach ( var urun in urunler)  // Bu arka tarafta var Urun olarak alıyor
             {
                 Console.WriteLine("Ürünün adi:" + urun.Adi);
                 Console.WriteLine("Ürünün Fiyatı:" + urun.Fiyati);
@@ -29,13 +29,10 @@ namespace Metotlar
 
             Console.WriteLine("---Metodlar--------------");
 
+            SepetManager sepeteEkle = new SepetManager();
+            sepeteEkle.Ekle(urun1);
 
-            SepetManager sepetManager = new SepetManager();
-            sepetManager.Ekle(urun1);
-            sepetManager.Ekle(urun2);
-
-            sepetManager.Ekle2("Armut", "Yeşil Armut", "");
-
+            
         }
     }
 }

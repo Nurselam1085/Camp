@@ -6,7 +6,7 @@ namespace Metotlar
 {
      class Urun
     {
-        public int Id { get; set; }
+        public int Id { get; set; } //Datayı diğerlerinden ayırt etmek için kullanırız
 
         public string Adi { get; set; }
 
@@ -17,3 +17,4 @@ namespace Metotlar
         public int StokAdedi { get; set; }
     }
 }
+// Burdakilerin hepsi Property 'dir yani özellikleri (Ürünün özellikleri)

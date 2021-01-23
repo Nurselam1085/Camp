@@ -8,17 +8,14 @@ namespace Metotlar
     {
 
         
-      public void Ekle(Urun urun)
+      public void Ekle(Urun urun) // Metodu şu şekilde yazıyoruz
         {
 
             Console.WriteLine("Sepete eklendi : " + urun.Adi);
+            Console.WriteLine("Ürünün fiyatı : " + urun.Fiyati);
         }
 
-        public void Ekle2(string urunAdi, string acıklama , double fiyat , int stokAdedi)
-        {
-         Console.WriteLine()
-
-        }
+       
     }
 }
 
